@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yUP-7o-ZQ6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lolypoo Yoga House-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Odev4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pR8-MA-wC7">
+                                <rect key="frame" x="138" y="98" width="138" height="62.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" name="titleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="homepage" translatesAutoresizingMaskIntoConstraints="NO" id="Y33-UA-T5H">
+                                <rect key="frame" x="49" y="207" width="316" height="397"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="219" id="g0e-J0-LBa"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVN-gr-e0r">
+                                <rect key="frame" x="141" y="664" width="160" height="41"/>
+                                <color key="backgroundColor" name="buttonColor"/>
+                                <color key="tintColor" name="titleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Asana">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonAsana:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4RX-7n-HA7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zj5-mn-ITG">
+                                <rect key="frame" x="141" y="744" width="160" height="41"/>
+                                <color key="backgroundColor" name="buttonColor"/>
+                                <color key="tintColor" name="titleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Fly Yoga">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonFlyyoga:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HpJ-Mk-DiS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to this unique yoga home..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1R7-dy-gRU">
+                                <rect key="frame" x="61" y="598" width="287" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fVN-gr-e0r" firstAttribute="trailing" secondItem="Zj5-mn-ITG" secondAttribute="trailing" id="3LY-LT-10Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fVN-gr-e0r" secondAttribute="trailing" constant="113" id="5xG-TV-vzy"/>
+                            <constraint firstItem="Y33-UA-T5H" firstAttribute="top" secondItem="pR8-MA-wC7" secondAttribute="bottom" constant="60.670000000000002" id="AnC-8y-8Dr"/>
+                            <constraint firstItem="fVN-gr-e0r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="Ok0-I7-yow"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zj5-mn-ITG" secondAttribute="bottom" constant="53" id="S8H-9D-gv6"/>
+                            <constraint firstItem="pR8-MA-wC7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e2U-3M-VeL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y33-UA-T5H" secondAttribute="bottom" constant="398" id="p8m-Vx-X6q"/>
+                            <constraint firstItem="pR8-MA-wC7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="pck-Vx-XK1"/>
+                            <constraint firstItem="Y33-UA-T5H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="qHs-3a-xC7"/>
+                            <constraint firstItem="Y33-UA-T5H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qt7-MJ-Wak"/>
+                            <constraint firstItem="fVN-gr-e0r" firstAttribute="leading" secondItem="Zj5-mn-ITG" secondAttribute="leading" id="qvp-7D-BWB"/>
+                            <constraint firstItem="Zj5-mn-ITG" firstAttribute="top" secondItem="fVN-gr-e0r" secondAttribute="bottom" constant="39" id="sgj-ho-fQ0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lolypoo Yoga House" id="UkW-HE-mLB"/>
+                    <connections>
+                        <outlet property="imageHomepage" destination="Y33-UA-T5H" id="1Dk-uF-eHp"/>
+                        <outlet property="labelHomepage" destination="pR8-MA-wC7" id="tku-LU-7iM"/>
+                        <segue destination="9UK-9M-kt1" kind="show" identifier="asanaTransition" id="voF-r6-Izf"/>
+                        <segue destination="XnN-ic-wYc" kind="show" identifier="flyYogaTransition" id="eVK-A6-lg3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.81159420289862" y="-28.125"/>
+        </scene>
+        <!--Asana View Controller-->
+        <scene sceneID="xVb-Me-fQz">
+            <objects>
+                <viewController id="9UK-9M-kt1" customClass="AsanaViewController" customModule="Odev4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gWA-Gr-U0K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asana Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzE-41-e93">
+                                <rect key="frame" x="135.5" y="98" width="143" height="62.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" name="titleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="asanapage" translatesAutoresizingMaskIntoConstraints="NO" id="W7q-A2-CrY">
+                                <rect key="frame" x="77" y="285" width="260" height="227"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="227" id="ecJ-b9-dgy"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VN-R6-17N">
+                                <rect key="frame" x="136.5" y="745" width="152.5" height="41"/>
+                                <color key="backgroundColor" name="buttonColor"/>
+                                <color key="tintColor" name="titleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Asana Detail">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonAsanadetail:" destination="9UK-9M-kt1" eventType="touchUpInside" id="jNE-aj-nj4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arrow Asana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4Z-td-i6g">
+                                <rect key="frame" x="135" y="560" width="131" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="crB-TC-82b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KzE-41-e93" firstAttribute="top" secondItem="crB-TC-82b" secondAttribute="top" constant="50" id="ChY-H9-rp1"/>
+                            <constraint firstItem="crB-TC-82b" firstAttribute="bottom" secondItem="W7q-A2-CrY" secondAttribute="bottom" constant="391" id="Fyl-2q-aO4"/>
+                            <constraint firstItem="crB-TC-82b" firstAttribute="trailing" secondItem="0VN-R6-17N" secondAttribute="trailing" constant="125" id="G09-Qm-KCX"/>
+                            <constraint firstItem="W7q-A2-CrY" firstAttribute="top" secondItem="KzE-41-e93" secondAttribute="bottom" constant="59.670000000000002" id="Lwk-j5-Y4f"/>
+                            <constraint firstItem="W7q-A2-CrY" firstAttribute="centerX" secondItem="KzE-41-e93" secondAttribute="centerX" id="Tcl-dh-og7"/>
+                            <constraint firstItem="KzE-41-e93" firstAttribute="centerX" secondItem="gWA-Gr-U0K" secondAttribute="centerX" id="bpo-aO-lqd"/>
+                            <constraint firstItem="crB-TC-82b" firstAttribute="trailing" secondItem="W7q-A2-CrY" secondAttribute="trailing" constant="77" id="qRi-HH-azs"/>
+                            <constraint firstItem="crB-TC-82b" firstAttribute="bottom" secondItem="0VN-R6-17N" secondAttribute="bottom" constant="52" id="xiS-Df-wdK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="e6B-5n-tAG"/>
+                    <connections>
+                        <outlet property="imageAsana" destination="W7q-A2-CrY" id="pVF-14-W2s"/>
+                        <outlet property="labelAsana" destination="KzE-41-e93" id="gZT-VG-tzx"/>
+                        <segue destination="CpN-pb-S81" kind="show" identifier="arowasanaTransition" id="KjU-Wh-pCo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Em3-N6-uX8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1749" y="-648"/>
+        </scene>
+        <!--Yoga View Controller-->
+        <scene sceneID="BSB-8z-jj7">
+            <objects>
+                <viewController id="XnN-ic-wYc" customClass="YogaViewController" customModule="Odev4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hi0-Nt-VEC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fly Yoga Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpR-vH-k1P">
+                                <rect key="frame" x="123" y="98" width="168" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" name="titleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZA-hV-xcL">
+                                <rect key="frame" x="134.5" y="745" width="174.5" height="41"/>
+                                <color key="backgroundColor" name="buttonColor"/>
+                                <color key="tintColor" name="titleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Fly Yoga Detail">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonFlyyoga:" destination="XnN-ic-wYc" eventType="touchUpInside" id="LUA-fa-z6C"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" image="flyyogaPage" translatesAutoresizingMaskIntoConstraints="NO" id="6hQ-tp-i93">
+                                <rect key="frame" x="76" y="272" width="262" height="280"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Get to know hammock yoga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kac-j0-xff">
+                                <rect key="frame" x="106" y="632" width="232" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y2d-Jc-Jyu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kpR-vH-k1P" firstAttribute="top" secondItem="y2d-Jc-Jyu" secondAttribute="top" constant="50" id="0ex-65-dyC"/>
+                            <constraint firstItem="kpR-vH-k1P" firstAttribute="centerX" secondItem="hi0-Nt-VEC" secondAttribute="centerX" id="T1W-iI-jS4"/>
+                            <constraint firstItem="6hQ-tp-i93" firstAttribute="top" secondItem="kpR-vH-k1P" secondAttribute="bottom" constant="74" id="U5d-Sb-VBT"/>
+                            <constraint firstItem="y2d-Jc-Jyu" firstAttribute="trailing" secondItem="kZA-hV-xcL" secondAttribute="trailing" constant="105" id="X0r-PB-rje"/>
+                            <constraint firstItem="6hQ-tp-i93" firstAttribute="leading" secondItem="y2d-Jc-Jyu" secondAttribute="leading" constant="76" id="dnA-Vm-cLx"/>
+                            <constraint firstItem="6hQ-tp-i93" firstAttribute="centerX" secondItem="hi0-Nt-VEC" secondAttribute="centerX" id="pgv-nS-aXl"/>
+                            <constraint firstItem="y2d-Jc-Jyu" firstAttribute="bottom" secondItem="kZA-hV-xcL" secondAttribute="bottom" constant="52" id="qtp-JH-w3q"/>
+                            <constraint firstItem="y2d-Jc-Jyu" firstAttribute="bottom" secondItem="6hQ-tp-i93" secondAttribute="bottom" constant="354" id="req-dQ-npQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rvv-1y-i5s"/>
+                    <connections>
+                        <outlet property="imageFlyyoga" destination="6hQ-tp-i93" id="67z-D9-WZN"/>
+                        <outlet property="labelFlayyoga" destination="kpR-vH-k1P" id="C8Q-Vd-tfp"/>
+                        <segue destination="LFc-A4-j5L" kind="show" identifier="flyYogaDetailTransition" id="19A-KX-FGB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Idz-Ii-C9A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.81159420289862" y="778.79464285714278"/>
+        </scene>
+        <!--Yoga Detail View Controller-->
+        <scene sceneID="PaX-C2-kfo">
+            <objects>
+                <viewController id="LFc-A4-j5L" customClass="YogaDetailViewController" customModule="Odev4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rha-0B-iAw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fly Yoga Detail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpz-cp-fPO">
+                                <rect key="frame" x="118" y="146" width="178" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" name="titleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNU-n0-T1x">
+                                <rect key="frame" x="152.5" y="745" width="141.5" height="41"/>
+                                <color key="backgroundColor" name="buttonColor"/>
+                                <color key="tintColor" name="titleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Home Page">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonHomepage:" destination="LFc-A4-j5L" eventType="touchUpInside" id="bbK-sM-l7m"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="detail" translatesAutoresizingMaskIntoConstraints="NO" id="mMz-uy-0Ch">
+                                <rect key="frame" x="77" y="214" width="260" height="227"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="227" id="yaq-Gg-B1c"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfR-gI-kPb">
+                                <rect key="frame" x="64" y="468" width="286" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="169" id="1Re-ah-5tK"/>
+                                </constraints>
+                                <string key="text">Aerial yoga; It is known as hammock yoga, anti-gravity yoga or fly yoga. Classic Hatha Yoga poses are performed with the help of several meters of fabric hanging from the ceiling.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9R4-nT-H0E"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9R4-nT-H0E" firstAttribute="trailing" secondItem="CfR-gI-kPb" secondAttribute="trailing" constant="174" id="3hL-1v-o05"/>
+                            <constraint firstItem="mMz-uy-0Ch" firstAttribute="leading" secondItem="9R4-nT-H0E" secondAttribute="leading" constant="77" id="7MW-FL-oYv"/>
+                            <constraint firstItem="BNU-n0-T1x" firstAttribute="top" secondItem="CfR-gI-kPb" secondAttribute="bottom" constant="86" id="9dl-BP-CJg"/>
+                            <constraint firstItem="Mpz-cp-fPO" firstAttribute="centerX" secondItem="Rha-0B-iAw" secondAttribute="centerX" id="Pd5-OV-MBz"/>
+                            <constraint firstItem="9R4-nT-H0E" firstAttribute="bottom" secondItem="BNU-n0-T1x" secondAttribute="bottom" constant="52" id="Tgs-fY-EvY"/>
+                            <constraint firstItem="9R4-nT-H0E" firstAttribute="trailing" secondItem="BNU-n0-T1x" secondAttribute="trailing" constant="120" id="bIR-B8-7pV"/>
+                            <constraint firstItem="CfR-gI-kPb" firstAttribute="top" secondItem="mMz-uy-0Ch" secondAttribute="bottom" constant="8" id="dRG-TO-bm8"/>
+                            <constraint firstItem="BNU-n0-T1x" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9R4-nT-H0E" secondAttribute="leading" symbolic="YES" id="hva-gh-08x"/>
+                            <constraint firstItem="CfR-gI-kPb" firstAttribute="leading" secondItem="9R4-nT-H0E" secondAttribute="leading" constant="51" id="koN-cQ-1Y4"/>
+                            <constraint firstItem="Mpz-cp-fPO" firstAttribute="centerX" secondItem="mMz-uy-0Ch" secondAttribute="centerX" id="ldy-vw-0Ab"/>
+                            <constraint firstItem="Mpz-cp-fPO" firstAttribute="top" secondItem="9R4-nT-H0E" secondAttribute="top" constant="98" id="pjw-jT-ycN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6dV-wP-XoA"/>
+                    <connections>
+                        <outlet property="labelDetailexp" destination="CfR-gI-kPb" id="tsG-D6-LDp"/>
+                        <outlet property="labelFlyyogadetail" destination="Mpz-cp-fPO" id="gug-QX-SZB"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="homepageTransition" id="JFw-ae-bHS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1mk-X7-QhI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2960.8695652173915" y="330.13392857142856"/>
+        </scene>
+        <!--Arow Asana View Controller-->
+        <scene sceneID="0jm-Os-cuP">
+            <objects>
+                <viewController id="CpN-pb-S81" customClass="ArowAsanaViewController" customModule="Odev4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aaC-5B-eiE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arow Asana Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqF-Fr-ZPz">
+                                <rect key="frame" x="101" y="98" width="212" height="31.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" name="titleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEx-kp-dQd">
+                                <rect key="frame" x="144" y="745" width="156" height="41"/>
+                                <color key="backgroundColor" name="buttonColor"/>
+                                <color key="tintColor" name="titleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Type of Yoga">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonTypeofyoga:" destination="CpN-pb-S81" eventType="touchUpInside" id="qO2-K0-ayM"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asanapage" translatesAutoresizingMaskIntoConstraints="NO" id="RLB-Gj-OTF">
+                                <rect key="frame" x="77" y="239" width="260" height="227"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="227" id="hgV-8S-wGX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The body stretches out like an arrow. A lock is created from 3 different points." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1o-Wy-0HT">
+                                <rect key="frame" x="77" y="506" width="281" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DbB-39-1dl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iEx-kp-dQd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DbB-39-1dl" secondAttribute="leading" symbolic="YES" id="G2z-Mt-EjL"/>
+                            <constraint firstItem="RLB-Gj-OTF" firstAttribute="top" secondItem="aaC-5B-eiE" secondAttribute="top" constant="239" id="VPG-ad-z73"/>
+                            <constraint firstItem="DbB-39-1dl" firstAttribute="trailing" secondItem="iEx-kp-dQd" secondAttribute="trailing" constant="114" id="W8X-LW-MeX"/>
+                            <constraint firstItem="RLB-Gj-OTF" firstAttribute="centerX" secondItem="zqF-Fr-ZPz" secondAttribute="centerX" id="ZQf-1c-bgy"/>
+                            <constraint firstItem="zqF-Fr-ZPz" firstAttribute="centerX" secondItem="aaC-5B-eiE" secondAttribute="centerX" id="dhP-cH-tCi"/>
+                            <constraint firstItem="zqF-Fr-ZPz" firstAttribute="top" secondItem="DbB-39-1dl" secondAttribute="top" constant="50" id="jq5-tp-8vm"/>
+                            <constraint firstItem="RLB-Gj-OTF" firstAttribute="leading" secondItem="DbB-39-1dl" secondAttribute="leading" constant="77" id="p4g-1h-a8w"/>
+                            <constraint firstItem="DbB-39-1dl" firstAttribute="bottom" secondItem="iEx-kp-dQd" secondAttribute="bottom" constant="52" id="res-s0-b4y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eYj-By-xbk"/>
+                    <connections>
+                        <outlet property="labelArowasana" destination="zqF-Fr-ZPz" id="ViE-oe-OpR"/>
+                        <outlet property="labelArowexp" destination="l1o-Wy-0HT" id="Y4Z-ws-AeM"/>
+                        <segue destination="LFc-A4-j5L" kind="show" identifier="flyDetailTransition" id="aAA-1z-p2u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="duk-sZ-5oz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2960.8695652173915" y="-648.21428571428567"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2g3-h9-RLC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yUP-7o-ZQ6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uh7-U8-YF0">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nBd-ed-aeL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcF-xW-etW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66.666666666666671" y="-28.125"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="19A-KX-FGB"/>
+        <segue reference="JFw-ae-bHS"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="asanapage" width="228" height="341.33334350585938"/>
+        <image name="detail" width="339" height="341.33334350585938"/>
+        <image name="flyyogaPage" width="375" height="667"/>
+        <image name="homepage" width="263.33334350585938" height="235.66667175292969"/>
+        <namedColor name="buttonColor">
+            <color red="0.81400001049041748" green="0.5350000262260437" blue="0.8399999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="titleColor">
+            <color red="0.18000000715255737" green="0.0" blue="0.18700000643730164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
